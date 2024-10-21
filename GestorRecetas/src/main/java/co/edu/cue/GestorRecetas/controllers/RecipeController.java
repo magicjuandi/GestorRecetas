@@ -37,7 +37,7 @@ public class RecipeController {
     @Autowired
     private IngredientService ingredientService;
 
-    @GetMapping("/createForm")//Metodo get para el formulario de creacion de Recetas
+    @GetMapping("/createForm")//Metodo get para el formulario de creacion de Recetas.
     public ModelAndView createForm() {
         List<IngredientDto> ingredientDtos = ingredientService.getAll();
         ModelAndView modelAndView = new ModelAndView("create-recipe");
@@ -65,7 +65,7 @@ public class RecipeController {
         recipeService.save(recipeDto);
         return "redirect:/Recipe/get";
     }
-    @GetMapping("/updateForm")//Metodo get para el formulario de actualización de Recetas
+    @GetMapping("/updateForm")//Metodo get para el formulario de actualización de Recetas.
     public ModelAndView updateForm() {
         List<IngredientDto> ingredientDtos = ingredientService.getAll();
         ModelAndView modelAndView = new ModelAndView("update-recipe");
@@ -97,7 +97,7 @@ public class RecipeController {
         recipeService.save(newRecipeDto);
         return "redirect:/Recipe/get";
     }
-    @GetMapping("/updateReviewForm")//Metodo get para el formulario de creacion de reviews en Recetas
+    @GetMapping("/updateReviewForm")//Metodo get para el formulario de creacion de reviews en Recetas.
     public ModelAndView updateReviewForm() {
         return new ModelAndView("update-review-recipe");
     }
@@ -119,14 +119,14 @@ public class RecipeController {
         recipeService.save(newRecipeDto);
         return "redirect:/Recipe/get";
     }
-    @GetMapping("/get")//Metodo get para el listado de Recetas
+    @GetMapping("/get")//Metodo get para el listado de Recetas.
     public ModelAndView get() {
         List<RecipeDto> recipes = recipeService.getAll();
         ModelAndView modelAndView = new ModelAndView("list-recipe");
         modelAndView.addObject("recipes", recipes);
         return modelAndView;
     }
-    @GetMapping("/statusForm")//Metodo get para el formulario de actualizacion de estado en Recetas
+    @GetMapping("/statusForm")//Metodo get para el formulario de actualizacion de estado en Recetas.
     public ModelAndView updateStatusForm() {
         return new ModelAndView("update-status-recipe");
     }
@@ -141,7 +141,7 @@ public class RecipeController {
         }
 
     }
-    @GetMapping("/favoriteForm")//Metodo get para el formulario de favorito en Recetas
+    @GetMapping("/favoriteForm")//Metodo get para el formulario de favorito en Recetas.
     public ModelAndView updateFavoriteForm() {
         return new ModelAndView("update-favorite-recipe");
     }
@@ -155,7 +155,7 @@ public class RecipeController {
         }
     }
 
-    @GetMapping("/pdfForm")//Metodo get para el formulario de creacion de pdf de Receta
+    @GetMapping("/pdfForm")//Metodo get para el formulario de creacion de pdf de Receta.
     public ModelAndView exportToPdfForm() {
         return new ModelAndView("pdf-recipe");
     }

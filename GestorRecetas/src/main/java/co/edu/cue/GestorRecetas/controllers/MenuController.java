@@ -38,7 +38,7 @@ public class MenuController {
     @Autowired
     private RecipeService recipeService;
 
-    @GetMapping("/createForm")//Metodo get con el formulario para la creacion de Menús
+    @GetMapping("/createForm")//Metodo get con el formulario para la creacion de Menús.
     public ModelAndView createForm() {
         List<RecipeDto> recipeDtos = recipeService.getAll();
         ModelAndView modelAndView = new ModelAndView("create-menu");
@@ -58,7 +58,7 @@ public class MenuController {
         menuService.save(menuDto);
         return "redirect:/Menu/get";
     }
-    @GetMapping("/updateForm")//Metodo get con el formulario para la actualización de Menús
+    @GetMapping("/updateForm")//Metodo get con el formulario para la actualización de Menús.
     public ModelAndView updateForm() {
         List<RecipeDto> recipeDtos = recipeService.getAll();
         ModelAndView modelAndView = new ModelAndView("update-menu");
@@ -80,7 +80,7 @@ public class MenuController {
         menuService.save(newMenuDto);
         return "redirect:/Menu/get";
     }
-    @GetMapping("/get")//Metodo get para el listado de Menús
+    @GetMapping("/get")//Metodo get para el listado de Menús.
     public ModelAndView get() {
         List<MenuDto> menus = menuService.getAll();
         ModelAndView modelAndView = new ModelAndView("list-menu");
@@ -88,7 +88,7 @@ public class MenuController {
         return modelAndView;
     }
 
-    @GetMapping("/statusForm")//Metodo get para cambiar el estado de Menú
+    @GetMapping("/statusForm")//Metodo get para cambiar el estado de Menú.
     public ModelAndView updateStatusForm() {
         return new ModelAndView("update-status-menu");
     }
@@ -103,7 +103,7 @@ public class MenuController {
         }
 
     }
-    @GetMapping("/excelForm")//Metodo get para llamar el excel de ingredientes del Menú
+    @GetMapping("/excelForm")//Metodo get para llamar el excel de ingredientes del Menú.
     public ModelAndView excelForm() {
         return new ModelAndView("excel-menu");
     }
