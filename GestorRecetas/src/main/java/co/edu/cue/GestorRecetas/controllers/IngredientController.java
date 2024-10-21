@@ -24,7 +24,7 @@ public class IngredientController {
     @Autowired
     private RecipeService recipeService;
 
-    @GetMapping("/createForm")
+    @GetMapping("/createForm")//Metodo get con el formulario para la creacion de Ingredientes
     public ModelAndView createForm() {
         return new ModelAndView("create-ingredient");
     }
@@ -42,7 +42,7 @@ public class IngredientController {
         ingredientService.save(ingredientDto);
         return "redirect:/Ingredient/get";
     }
-    @GetMapping("/updateForm")
+    @GetMapping("/updateForm")//Metodo get con el formulario para la actualización de Ingredientes
     public ModelAndView updateForm() {
         return new ModelAndView("update-ingredient");
     }
@@ -62,18 +62,18 @@ public class IngredientController {
         ingredientService.save(newIngredientDto);
         return "redirect:/Ingredient/get";
     }
-    @GetMapping("/get")
+    @GetMapping("/get")//Metodo get para el listado Ingredientes
     public ModelAndView get() {
         List<IngredientDto> ingredients = ingredientService.getAll();
         ModelAndView modelAndView = new ModelAndView("list-ingredient");
         modelAndView.addObject("ingredients", ingredients);
         return modelAndView;
     }
-    @GetMapping("/getByRecipeForm")
+    @GetMapping("/getByRecipeForm")//Metodo get para el listado Ingredientes por receta
     public ModelAndView getByRecipeForm() {
         return new ModelAndView("get-by-recipe-ingredient");
     }
-    @GetMapping("/getByRecipe")
+    @GetMapping("/getByRecipe")//Metodo get para el listado Ingredientes por receta
     public ModelAndView getByRecipe(@RequestParam int recipeId) {
         RecipeDto recipeDto = recipeService.getById(recipeId);
         List<IngredientDto> ingredients = ingredientService.getAllByRecipe(recipeDto);
@@ -81,7 +81,7 @@ public class IngredientController {
         modelAndView.addObject("ingredients", ingredients);
         return modelAndView;
     }
-    @GetMapping("/statusForm")
+    @GetMapping("/statusForm")//Metodo get para cambiar el estado de un ingrediente
     public ModelAndView updateStatusForm() {
         return new ModelAndView("update-status-ingredient");
     }
