@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Update Ingredient Status</title>
+</head>
+<body>
+<h1>Update Ingredient Status</h1>
+<!-- Formulario para actualizar el estado de un ingrediente -->
+<form action="/Ingredient/status" method="POST">
+    <!-- Simulación del método PATCH -->
+    <input type="hidden" name="_method" value="PATCH">
+
+    <label for="id">Ingredient ID:</label>
+    <input type="number" id="id" name="id" required><br><br>
+
+    <label for="status">New Status:</label>
+    <select id="status" name="status" required>
+        <option value="A">Active (A)</option>
+        <option value="I">Inactive (I)</option>
+    </select><br><br>
+
+    <button type="submit">Update Status</button>
+</form>
+</body>
+</html>

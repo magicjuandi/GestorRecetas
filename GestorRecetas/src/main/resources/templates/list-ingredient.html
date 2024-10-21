@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ingredients List</title>
+</head>
+<body>
+<h1>List of Ingredients</h1>
+
+<!-- Tabla para listar los ingredientes -->
+<table border="1">
+    <thead>
+    <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Quantity</th>
+        <th>Unit</th>
+        <th>Status</th>
+    </tr>
+    </thead>
+    <tbody>
+    <!-- Rellenar la tabla con ingredientes obtenidos del backend -->
+    <tr th:each="ingredient : ${ingredients}">
+        <td th:text="${ingredient.idIngredient}"></td>
+        <td th:text="${ingredient.name}"></td>
+        <td th:text="${ingredient.quantity}"></td>
+        <td th:text="${ingredient.unit}"></td>
+        <td th:text="${ingredient.status}"></td>
+        <td>
+            <a th:href="@{/Ingredient/updateForm(id=${ingredient.idIngredient})}">Edit</a>
+            <a th:href="@{/Ingredient/statusForm(id=${ingredient.idIngredient})}">Update Status</a>
+        </td>
+    </tr>
+    </tbody>
+</table>
+
+</body>
+</html>

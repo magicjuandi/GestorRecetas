@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Update Menu Status</title>
+</head>
+<body>
+<h1>Update Menu Status</h1>
+<form action="/Menu/status" method="POST">
+    <label for="id">Menu ID:</label>
+    <input type="number" id="id" name="id" required><br><br>
+
+    <label for="status">New Status:</label>
+    <select id="status" name="status">
+        <option value="A">Active</option>
+        <option value="I">Inactive</option>
+    </select><br><br>
+
+    <button type="submit">Update Status</button>
+</form>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Update Menu</title>
+</head>
+<body>
+<h1>Update Menu</h1>
+<form action="/Menu/update" method="POST">
+    <label for="idMenu">Menu ID:</label>
+    <input type="number" id="idMenu" name="idMenu" required><br><br>
+
+    <label for="recipes">Select Recipes:</label>
+    <select id="recipes" name="recipes" multiple>
+        <option th:each="recipe : ${recipes}" th:value="${recipe.idRecipe}" th:text="${recipe.name}"></option>
+    </select><br><br>
+
+    <button type="submit">Update Menu</button>
+</form>
+</body>
+</html>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Menu</title>
+</head>
+<body>
+<h1>Create Menu</h1>
+<form action="/Menu/create" method="POST">
+    <label for="recipes">Select Recipes:</label>
+    <select id="recipes" name="recipes" multiple>
+        <option th:each="recipe : ${recipes}" th:value="${recipe.idRecipe}" th:text="${recipe.name}"></option>
+    </select><br><br>
+
+    <button type="submit">Create Menu</button>
+</form>
+</body>
+</html>
