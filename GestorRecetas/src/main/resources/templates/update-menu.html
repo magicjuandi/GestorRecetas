@@ -4,19 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Update Menu</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
-<h1>Update Menu</h1>
-<form action="/Menu/update" method="POST">
-    <label for="idMenu">Menu ID:</label>
-    <input type="number" id="idMenu" name="idMenu" required><br><br>
-
-    <label for="recipes">Select Recipes:</label>
-    <select id="recipes" name="recipes" multiple>
-        <option th:each="recipe : ${recipes}" th:value="${recipe.idRecipe}" th:text="${recipe.name}"></option>
-    </select><br><br>
-
-    <button type="submit">Update Menu</button>
-</form>
+<div class="container mt-5">
+    <h1 class="text-center mb-4">Update Menu</h1>
+    <form action="/Menu/update" method="POST">
+        <div class="form-group">
+            <label for="idMenu">Menu ID:</label>
+            <input type="number" id="idMenu" name="idMenu" class="form-control" required>
+        </div>
+        <div class="form-group">
+            <label for="recipes">Select Recipes:</label>
+            <select id="recipes" name="recipes" class="form-control" multiple>
+                <option th:each="recipe : ${recipes}" th:value="${recipe.idRecipe}" th:text="${recipe.name}"></option>
+            </select>
+        </div>
+        <button type="submit" class="btn btn-primary btn-block">Update Menu</button>
+    </form>
+</div>
 </body>
 </html>

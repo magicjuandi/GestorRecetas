@@ -4,28 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Update Ingredient</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
-<h1>Update Ingredient</h1>
-<form action="/Ingredient/update" method="POST">
-    <input type="hidden" name="_method" value="PUT">
-
-    <label for="idIngredient">Ingredient ID:</label>
-    <input type="number" id="idIngredient" name="idIngredient" required><br><br>
-
-    <label for="name">Ingredient Name:</label>
-    <input type="text" id="name" name="name"><br><br>
-
-    <label for="quantity">Quantity:</label>
-    <input type="number" id="quantity" name="quantity"><br><br>
-
-    <label for="unit">Unit:</label>
-    <select id="unit" name="unit">
-        <option value="" disabled selected>Select a unit</option>
-        <option value="kg">Kilograms (kg)</option>
-        <option value="lt">Liters (lt)</option>
-    </select><br><br>
-    <button type="submit">Update Ingredient</button>
-</form>
+<div class="container mt-5">
+    <h1 class="text-center mb-4">Update Ingredient</h1>
+    <form action="/Ingredient/update" method="POST">
+        <input type="hidden" name="_method" value="PUT">
+        <div class="form-group">
+            <label for="idIngredient">Ingredient ID:</label>
+            <input type="number" id="idIngredient" name="idIngredient" class="form-control" required>
+        </div>
+        <div class="form-group">
+            <label for="name">Ingredient Name:</label>
+            <input type="text" id="name" name="name" class="form-control">
+        </div>
+        <div class="form-group">
+            <label for="quantity">Quantity:</label>
+            <input type="number" id="quantity" name="quantity" class="form-control">
+        </div>
+        <div class="form-group">
+            <label for="unit">Unit:</label>
+            <select id="unit" name="unit" class="form-control">
+                <option value="" disabled selected>Select a unit</option>
+                <option value="kg">Kilograms (kg)</option>
+                <option value="lt">Liters (lt)</option>
+            </select>
+        </div>
+        <button type="submit" class="btn btn-primary btn-block">Update Ingredient</button>
+    </form>
+</div>
 </body>
 </html>

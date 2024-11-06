@@ -4,14 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Get Ingredients by Recipe</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
 </head>
-<body>
-<h1>Get Ingredients by Recipe</h1>
-<form action="/Ingredient/getByRecipe" method="GET">
+<body class="container mt-5">
+<h1 class="text-center">Get Ingredients by Recipe</h1>
+<form action="/Ingredient/getByRecipe" method="GET" class="form-group">
     <label for="idRecipe">Recipe ID:</label>
-    <input type="number" id="idRecipe" name="idRecipe" required><br><br>
-
-    <button type="submit">Get Ingredients</button>
+    <input type="number" id="idRecipe" name="idRecipe" class="form-control" required>
+    <button type="submit" class="btn btn-primary mt-3">Get Ingredients</button>
 </form>
 </body>
 </html>
+

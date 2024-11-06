@@ -4,29 +4,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Create Recipe</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
-<h1>Create Recipe</h1>
-<form action="/Recipe/create" method="POST">
-    <label for="name">Recipe Name:</label>
-    <input type="text" id="name" name="name" required><br><br>
-
-    <label for="description">Description:</label>
-    <textarea id="description" name="description" required></textarea><br><br>
-
-    <label for="minutes">Minutes:</label>
-    <input type="number" id="minutes" name="minutes" required><br><br>
-
-    <label for="preparation">Preparation:</label>
-    <textarea id="preparation" name="preparation" required></textarea><br><br>
-
-    <label for="ingredients">Select Ingredients:</label><br>
-    <select id="ingredients" name="ingredients" multiple required>
-        <!-- Aquí se llenará la lista de ingredientes obtenidos del backend -->
-        <option th:each="ingredient : ${ingredients}" th:value="${ingredient.idIngredient}" th:text="${ingredient.name}"></option>
-    </select><br><br>
-
-    <button type="submit">Create Recipe</button>
-</form>
+<div class="container mt-5">
+    <h1 class="text-center mb-4">Create Recipe</h1>
+    <form action="/Recipe/create" method="POST">
+        <div class="form-group">
+            <label for="name">Recipe Name:</label>
+            <input type="text" id="name" name="name" class="form-control" required>
+        </div>
+        <div class="form-group">
+            <label for="description">Description:</label>
+            <textarea id="description" name="description" class="form-control" required></textarea>
+        </div>
+        <div class="form-group">
+            <label for="minutes">Minutes:</label>
+            <input type="number" id="minutes" name="minutes" class="form-control" required>
+        </div>
+        <div class="form-group">
+            <label for="preparation">Preparation:</label>
+            <textarea id="preparation" name="preparation" class="form-control" required></textarea>
+        </div>
+        <div class="form-group">
+            <label for="ingredients">Select Ingredients:</label>
+            <select id="ingredients" name="ingredients" class="form-control" multiple required>
+                <option th:each="ingredient : ${ingredients}" th:value="${ingredient.idIngredient}" th:text="${ingredient.name}"></option>
+            </select>
+        </div>
+        <button type="submit" class="btn btn-primary btn-block">Create Recipe</button>
+    </form>
+</div>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
