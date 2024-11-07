@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Ingredient List</title>
+</head>
+<body>
+<h1>Ingredients</h1>
+
+<table>
+    <thead>
+    <tr>
+        <th>Ingredient</th>
+        <th>Quantity</th>
+        <th>Unit</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="ingredient : ${ingredients}">
+        <td th:text="${ingredient.name}">Ingredient Name</td>
+        <td th:text="${ingredient.quantity}">Quantity</td>
+        <td th:text="${ingredient.unit}">Unit</td>
+    </tr>
+    </tbody>
+</table>
+</body>
+</html>

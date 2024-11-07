@@ -4,28 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2d0f86ac-ddf7-437e-a621-5197b526f128" name="Changes" comment="documentación2">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="2d0f86ac-ddf7-437e-a621-5197b526f128" name="Changes" comment="pruebas selenium">
+      <change afterPath="$PROJECT_DIR$/GestorRecetas/src/main/resources/templates/ingredientList.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GestorRecetas/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/GestorRecetas/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GestorRecetas/src/main/resources/templates/create-ingredient.html" beforeDir="false" afterPath="$PROJECT_DIR$/GestorRecetas/src/main/resources/templates/create-ingredient.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GestorRecetas/src/main/resources/templates/create-menu.html" beforeDir="false" afterPath="$PROJECT_DIR$/GestorRecetas/src/main/resources/templates/create-menu.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GestorRecetas/src/main/resources/templates/create-recipe.html" beforeDir="false" afterPath="$PROJECT_DIR$/GestorRecetas/src/main/resources/templates/create-recipe.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GestorRecetas/src/main/resources/templates/excel-menu.html" beforeDir="false" afterPath="$PROJECT_DIR$/GestorRecetas/src/main/resources/templates/excel-menu.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GestorRecetas/src/main/resources/templates/get-by-recipe-ingredient.html" beforeDir="false" afterPath="$PROJECT_DIR$/GestorRecetas/src/main/resources/templates/get-by-recipe-ingredient.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GestorRecetas/src/main/resources/templates/list-ingredient.html" beforeDir="false" afterPath="$PROJECT_DIR$/GestorRecetas/src/main/resources/templates/list-ingredient.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GestorRecetas/src/main/resources/templates/list-menu.html" beforeDir="false" afterPath="$PROJECT_DIR$/GestorRecetas/src/main/resources/templates/list-menu.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GestorRecetas/src/main/resources/templates/list-recipe.html" beforeDir="false" afterPath="$PROJECT_DIR$/GestorRecetas/src/main/resources/templates/list-recipe.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GestorRecetas/src/main/resources/templates/pdf-recipe.html" beforeDir="false" afterPath="$PROJECT_DIR$/GestorRecetas/src/main/resources/templates/pdf-recipe.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GestorRecetas/src/main/resources/templates/update-favorite-recipe.html" beforeDir="false" afterPath="$PROJECT_DIR$/GestorRecetas/src/main/resources/templates/update-favorite-recipe.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GestorRecetas/src/main/resources/templates/update-ingredient.html" beforeDir="false" afterPath="$PROJECT_DIR$/GestorRecetas/src/main/resources/templates/update-ingredient.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GestorRecetas/src/main/resources/templates/update-menu.html" beforeDir="false" afterPath="$PROJECT_DIR$/GestorRecetas/src/main/resources/templates/update-menu.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GestorRecetas/src/main/resources/templates/update-recipe.html" beforeDir="false" afterPath="$PROJECT_DIR$/GestorRecetas/src/main/resources/templates/update-recipe.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GestorRecetas/src/main/resources/templates/update-review-recipe.html" beforeDir="false" afterPath="$PROJECT_DIR$/GestorRecetas/src/main/resources/templates/update-review-recipe.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GestorRecetas/src/main/resources/templates/update-status-ingredient.html" beforeDir="false" afterPath="$PROJECT_DIR$/GestorRecetas/src/main/resources/templates/update-status-ingredient.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GestorRecetas/src/main/resources/templates/update-status-menu.html" beforeDir="false" afterPath="$PROJECT_DIR$/GestorRecetas/src/main/resources/templates/update-status-menu.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GestorRecetas/src/main/resources/templates/update-status-recipe.html" beforeDir="false" afterPath="$PROJECT_DIR$/GestorRecetas/src/main/resources/templates/update-status-recipe.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GestorRecetas/src/test/java/co/edu/cue/GestorRecetas/GestorRecetasApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/GestorRecetas/src/test/java/co/edu/cue/GestorRecetas/GestorRecetasApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GestorRecetas/src/main/java/co/edu/cue/GestorRecetas/controllers/MenuController.java" beforeDir="false" afterPath="$PROJECT_DIR$/GestorRecetas/src/main/java/co/edu/cue/GestorRecetas/controllers/MenuController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -116,7 +98,7 @@
       <command value="mvn test" />
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.GestorRecetasApplicationTests">
+  <component name="RunManager" selected="Spring Boot.GestorRecetasApplication">
     <configuration name="GestorRecetasApplicationTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="GestorRecetas" />
       <extension name="coverage">
@@ -223,6 +205,7 @@
       <workItem from="1730813119575" duration="5304000" />
       <workItem from="1730863279448" duration="797000" />
       <workItem from="1730917811085" duration="8000" />
+      <workItem from="1730935814538" duration="3518000" />
     </task>
     <task id="LOCAL-00001" summary="si">
       <option name="closed" value="true" />
@@ -248,7 +231,15 @@
       <option name="project" value="LOCAL" />
       <updated>1729484393837</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="pruebas selenium">
+      <option name="closed" value="true" />
+      <created>1730935841295</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1730935841295</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -268,7 +259,20 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="si" />
     <MESSAGE value="documentación" />
+    <MESSAGE value="Merge remote-tracking branch 'origin/master'" />
     <MESSAGE value="documentación2" />
-    <option name="LAST_COMMIT_MESSAGE" value="documentación2" />
+    <MESSAGE value="pruebas selenium" />
+    <option name="LAST_COMMIT_MESSAGE" value="pruebas selenium" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/GestorRecetas/src/test/java/co/edu/cue/GestorRecetas/services/RecipeServiceImplTest.java</url>
+          <line>231</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

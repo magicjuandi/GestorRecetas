@@ -20,6 +20,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
 
@@ -108,11 +109,14 @@ public class MenuController {
         return new ModelAndView("excel-menu");
     }
     @PostMapping("/exportIngredients")
-    public void exportIngredients(@RequestParam int idMenu, HttpServletResponse response)throws IOException {
+    public ModelAndView exportIngredients(@RequestParam int idMenu, Model model) {
+        ModelAndView modelAndView = new ModelAndView("ingredientList");
+
         MenuDto menuDto = menuService.getById(idMenu);
         if(menuDto ==null){
-            response.sendError(HttpServletResponse.SC_NOT_FOUND,"Menu not found");
-            return;
+            modelAndView.setViewName("error");
+            modelAndView.addObject("message", "Menu not found");
+            return modelAndView;
         }
         Map<String, IngredientDto> ingredientDtoMap = new HashMap<>();
         for(RecipeDto recipeDto : RecipeMapper.mapFrom(menuDto.recipes())) {
@@ -133,30 +137,8 @@ public class MenuController {
                 }
             }
         }
-        try(Workbook workbook = new XSSFWorkbook()) {
-            Sheet sheet = workbook.createSheet("Ingredients");
-            Row headerRow = sheet.createRow(0);
-            headerRow.createCell(0).setCellValue("Ingredient");
-            headerRow.createCell(1).setCellValue("Quantity");
-            headerRow.createCell(2).setCellValue("Unit");
-            int rowNum = 1;
-            for(Map.Entry<String, IngredientDto> entry : ingredientDtoMap.entrySet()) {
-                String ingredientName = entry.getKey();
-                IngredientDto ingredientDto = entry.getValue();
-                Row row = sheet.createRow(rowNum++);
-                row.createCell(0).setCellValue(ingredientName);
-                row.createCell(1).setCellValue(ingredientDto.quantity());
-                row.createCell(2).setCellValue(ingredientDto.unit());
-            }
-            response.setContentType("application/vnd.openxmlformats-officedocument.spreadsheetml.sheet");
-            response.setHeader("Content-Disposition", "attachment; filename=ingredients.xlsx");
-            try(OutputStream outputStream = response.getOutputStream()) {
-                workbook.write(outputStream);
-            }catch(Exception e) {
-                response.sendError(HttpServletResponse.SC_INTERNAL_SERVER_ERROR,"Error generating Excel file");
-            }
-        }catch(IOException e) {
-            response.sendError(HttpServletResponse.SC_INTERNAL_SERVER_ERROR,"Error generating Excel file");
-        }
+        modelAndView.addObject("ingredients", ingredientDtoMap.values());
+        return modelAndView;
     }
+
 }
