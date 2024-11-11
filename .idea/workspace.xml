@@ -5,7 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2d0f86ac-ddf7-437e-a621-5197b526f128" name="Changes" comment="prueba">
+      <change afterPath="$PROJECT_DIR$/GestorRecetas/src/test/resources/application-test.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/GestorRecetas/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/GestorRecetas/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GestorRecetas/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/GestorRecetas/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GestorRecetas/src/test/java/co/edu/cue/GestorRecetas/GestorRecetasApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/GestorRecetas/src/test/java/co/edu/cue/GestorRecetas/GestorRecetasApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GestorRecetas/src/test/java/co/edu/cue/GestorRecetas/services/IngredientServiceImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/GestorRecetas/src/test/java/co/edu/cue/GestorRecetas/services/IngredientServiceImplTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GestorRecetas/src/test/java/co/edu/cue/GestorRecetas/services/MenuServiceImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/GestorRecetas/src/test/java/co/edu/cue/GestorRecetas/services/MenuServiceImplTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GestorRecetas/src/test/java/co/edu/cue/GestorRecetas/services/RecipeServiceImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/GestorRecetas/src/test/java/co/edu/cue/GestorRecetas/services/RecipeServiceImplTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,6 +71,11 @@
     "repository": "GestorRecetas"
   }
 }]]></component>
+  <component name="JavaAutoRunManager">
+    <enabled-run-configurations>
+      <run-configuration type="MavenRunConfiguration" name="GestorRecetas [test]" />
+    </enabled-run-configurations>
+  </component>
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="CurrentFile" />
   </component>
@@ -75,44 +88,51 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;JUnit.EndPointTests.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.GestorRecetasApplicationTests.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.IngredientServiceImplTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.MenuServiceImplTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.RecipeServiceImplTest.executor&quot;: &quot;Run&quot;,
-    &quot;Maven.GestorRecetas [test].executor&quot;: &quot;Run&quot;,
-    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
-    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
-    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
-    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;Spring Boot.GestorRecetasApplication.executor&quot;: &quot;Run&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;masterBE&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/jdgra/OneDrive/Desktop/GRBE&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.customizations&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "JUnit.EndPointTests.executor": "Run",
+    "JUnit.GestorRecetasApplicationTests.executor": "Run",
+    "JUnit.IngredientServiceImplTest.executor": "Run",
+    "JUnit.MenuServiceImplTest.executor": "Run",
+    "JUnit.RecipeServiceImplTest.executor": "Run",
+    "Maven.GestorRecetas [clean,compile...].executor": "Run",
+    "Maven.GestorRecetas [clean,install...].executor": "Run",
+    "Maven.GestorRecetas [clean,install].executor": "Run",
+    "Maven.GestorRecetas [clean].executor": "Run",
+    "Maven.GestorRecetas [install].executor": "Run",
+    "Maven.GestorRecetas [test,-X].executor": "Run",
+    "Maven.GestorRecetas [test].executor": "Run",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Spring Boot.GestorRecetasApplication.executor": "Run",
+    "git-widget-placeholder": "masterBE",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/jdgra/OneDrive/Desktop/GRBE",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "preferences.customizations",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;postgresql&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "postgresql"
     ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\jdgra\Downloads\GestorRecetas\GestorRecetas\src\test\resources" />
       <recent name="C:\Users\jdgra\Downloads\GestorRecetas\GestorRecetas\src\main\resources\templates" />
       <recent name="C:\Users\jdgra\Downloads\GestorRecetas\GestorRecetas\src\main\resources\static" />
       <recent name="C:\Users\jdgra\Downloads\GestorRecetas\GestorRecetas\src\main\resources\templates\ingredient" />
@@ -120,10 +140,16 @@
   </component>
   <component name="RunAnythingCache">
     <option name="myCommands">
+      <command value="mvn clean install" />
+      <command value="mvn clean compile spring-boot:process-aot package  " />
+      <command value="mvn test -X" />
+      <command value="mvn clean" />
+      <command value="mvn install" />
       <command value="mvn test" />
+      <command value="mvn clean install -Dfile.encoding=UTF-8 " />
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.GestorRecetasApplication">
+  <component name="RunManager" selected="JUnit.EndPointTests">
     <configuration name="EndPointTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="GestorRecetas" />
       <extension name="coverage">
@@ -210,9 +236,9 @@
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.EndPointTests" />
+        <item itemvalue="JUnit.IngredientServiceImplTest" />
         <item itemvalue="JUnit.MenuServiceImplTest" />
         <item itemvalue="JUnit.RecipeServiceImplTest" />
-        <item itemvalue="JUnit.IngredientServiceImplTest" />
         <item itemvalue="JUnit.GestorRecetasApplicationTests" />
       </list>
     </recent_temporary>
@@ -249,7 +275,7 @@
       <workItem from="1730935814538" duration="4894000" />
       <workItem from="1731014283074" duration="5620000" />
       <workItem from="1731067811625" duration="31000" />
-      <workItem from="1731285178184" duration="6607000" />
+      <workItem from="1731285178184" duration="11737000" />
     </task>
     <task id="LOCAL-00001" summary="si">
       <option name="closed" value="true" />
@@ -403,7 +429,23 @@
       <option name="project" value="LOCAL" />
       <updated>1731293074287</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="prueba">
+      <option name="closed" value="true" />
+      <created>1731293327272</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1731293327272</updated>
+    </task>
+    <task id="LOCAL-00021" summary="prueba">
+      <option name="closed" value="true" />
+      <created>1731293800651</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1731293800651</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -430,16 +472,5 @@
     <MESSAGE value="Merge remote-tracking branch 'origin/masterBE' into masterBE" />
     <MESSAGE value="prueba" />
     <option name="LAST_COMMIT_MESSAGE" value="prueba" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/GestorRecetas/src/test/java/co/edu/cue/GestorRecetas/services/RecipeServiceImplTest.java</url>
-          <line>231</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>
