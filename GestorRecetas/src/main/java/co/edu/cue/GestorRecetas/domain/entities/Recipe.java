@@ -1,5 +1,6 @@
 package co.edu.cue.GestorRecetas.domain.entities;
 
+import com.fasterxml.jackson.annotation.JsonManagedReference;
 import jakarta.persistence.*;
 import lombok.*;
 
@@ -25,6 +26,7 @@ public class Recipe {
     @JoinTable(name = "recipe_ingredient",
     joinColumns = @JoinColumn(name = "idRecipe"),
     inverseJoinColumns = @JoinColumn(name = "idIngredient"))
+    @JsonManagedReference
     private List<Ingredient> ingredients;
     private Boolean favorite;
     private String review;
