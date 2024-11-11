@@ -19,9 +19,9 @@ jobs:
       - name: Set up JDK 17
         uses: actions/setup-java@v3
         with:
+          distribution: corretto
           java-version: '17'
-          distribution: 'corretto'  # Mueve distribution debajo de java-version
-          cache: 'maven'            # Asegúrate de que 'maven' esté entre comillas
+          cache: maven
 
       - name: Build with Maven
         run: mvn clean install
