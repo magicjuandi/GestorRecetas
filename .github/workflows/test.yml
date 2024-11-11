@@ -1,4 +1,4 @@
-name: Java CI with Maven
+name: Run Tests
 
 on:
   push:
@@ -8,25 +8,23 @@ on:
     branches:
       - masterBE
 
-
 jobs:
-  build:
+  test:
     runs-on: ubuntu-latest
 
     steps:
-      # Configurar Java
-      - name: Check out the code
-        uses: actions/checkout@v2
+      - name: Checkout code
+        uses: actions/checkout@v3
 
       - name: Set up JDK 17
-        uses: actions/setup-java@v2
+        uses: actions/setup-java@v3
         with:
-          java-version: '17'  # Asegúrate de especificar la versión de Java que usas en tu proyecto
+          distribution: "corretto"
+          java-version: '17'
+          cache: maven
 
-      # Ejecutar Maven
       - name: Build with Maven
-        run: mvn clean install -DskipTests  # Compila el proyecto sin ejecutar pruebas
+        run: mvn clean install
 
-      # Ejecutar Pruebas
-      - name: Run Tests
-        run: mvn test  # Ejecuta los tests en el proyecto
+      - name: Run tests
+        run: mvn test
