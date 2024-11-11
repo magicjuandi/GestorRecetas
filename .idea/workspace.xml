@@ -5,7 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2d0f86ac-ddf7-437e-a621-5197b526f128" name="Changes" comment="prueba">
-      <change afterPath="$PROJECT_DIR$/GestorRecetas/.github/workflows/test.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -250,7 +249,7 @@
       <workItem from="1730935814538" duration="4894000" />
       <workItem from="1731014283074" duration="5620000" />
       <workItem from="1731067811625" duration="31000" />
-      <workItem from="1731285178184" duration="2301000" />
+      <workItem from="1731285178184" duration="3758000" />
     </task>
     <task id="LOCAL-00001" summary="si">
       <option name="closed" value="true" />
@@ -324,7 +323,15 @@
       <option name="project" value="LOCAL" />
       <updated>1731286473701</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="prueba">
+      <option name="closed" value="true" />
+      <created>1731287510091</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1731287510091</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
