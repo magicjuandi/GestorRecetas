@@ -4,9 +4,12 @@ on:
   push:
     branches:
       - main  # Ejecuta el flujo en cada push a la rama main
+      - masterBE
   pull_request:
     branches:
       - main  # Ejecuta el flujo en cada pull request a la rama main
+      - masterBE
+
 
 jobs:
   build:
