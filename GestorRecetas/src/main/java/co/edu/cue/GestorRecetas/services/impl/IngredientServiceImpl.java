@@ -3,8 +3,10 @@ package co.edu.cue.GestorRecetas.services.impl;
 import co.edu.cue.GestorRecetas.domain.entities.Ingredient;
 import co.edu.cue.GestorRecetas.domain.entities.Recipe;
 import co.edu.cue.GestorRecetas.mapping.dtos.IngredientDto;
+import co.edu.cue.GestorRecetas.mapping.dtos.IngredientWODto;
 import co.edu.cue.GestorRecetas.mapping.dtos.RecipeDto;
 import co.edu.cue.GestorRecetas.mapping.mappers.IngredientMapper;
+import co.edu.cue.GestorRecetas.mapping.mappers.IngredientWOMapper;
 import co.edu.cue.GestorRecetas.mapping.mappers.RecipeMapper;
 import co.edu.cue.GestorRecetas.repositories.IngredientRepository;
 import co.edu.cue.GestorRecetas.services.IngredientService;
@@ -21,8 +23,8 @@ public class IngredientServiceImpl implements IngredientService {
     }
 
     @Override
-    public List<IngredientDto> getAll() {
-        return IngredientMapper.mapFrom((List<Ingredient>)repository.findAll() );
+    public List<IngredientWODto> getAll() {
+        return IngredientWOMapper.mapFrom((List<Ingredient>)repository.findAll() );
     }
 
     @Override
@@ -49,8 +51,8 @@ public class IngredientServiceImpl implements IngredientService {
     }
 
     @Override
-    public IngredientDto getById(int id) {
+    public IngredientWODto getById(int id) {
         Ingredient ingredient = repository.findById(id).orElseThrow();
-        return IngredientMapper.mapFrom(ingredient);
+        return IngredientWOMapper.mapFrom(ingredient);
     }
 }

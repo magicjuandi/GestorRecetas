@@ -4,6 +4,7 @@ import co.edu.cue.GestorRecetas.domain.entities.Ingredient;
 import co.edu.cue.GestorRecetas.domain.entities.Menu;
 import co.edu.cue.GestorRecetas.domain.entities.Recipe;
 import co.edu.cue.GestorRecetas.mapping.dtos.IngredientDto;
+import co.edu.cue.GestorRecetas.mapping.dtos.IngredientWODto;
 import co.edu.cue.GestorRecetas.mapping.dtos.RecipeDto;
 import co.edu.cue.GestorRecetas.mapping.mappers.RecipeMapper;
 import co.edu.cue.GestorRecetas.repositories.IngredientRepository;
@@ -60,7 +61,7 @@ public class IngredientServiceImplTest  {
         when(repository.findAll()).thenReturn(ingredients);
 
         // Act
-        List<IngredientDto> result = ingredientService.getAll();
+        List<IngredientWODto> result = ingredientService.getAll();
 
         // Assert
         assertNotNull(result);
@@ -208,7 +209,7 @@ public class IngredientServiceImplTest  {
         when(repository.findById(ingredientId)).thenReturn(Optional.of(ingredient));
 
         // Act
-        IngredientDto result = ingredientService.getById(ingredientId);
+        IngredientWODto result = ingredientService.getById(ingredientId);
 
         // Assert
         assertNotNull(result);

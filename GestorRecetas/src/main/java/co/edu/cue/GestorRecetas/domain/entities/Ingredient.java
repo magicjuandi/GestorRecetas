@@ -1,5 +1,6 @@
 package co.edu.cue.GestorRecetas.domain.entities;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
 import jakarta.persistence.*;
 import lombok.*;
 

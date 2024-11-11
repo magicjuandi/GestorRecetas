@@ -137,6 +137,12 @@
 			<artifactId>itext7-core</artifactId>
 			<version>8.0.4</version>
 		</dependency>
+		<dependency>
+			<groupId>io.rest-assured</groupId>
+			<artifactId>rest-assured</artifactId>
+			<version>5.5.0</version>
+			<scope>test</scope>
+		</dependency>
 	</dependencies>
 
 
