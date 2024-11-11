@@ -20,11 +20,12 @@ jobs:
         uses: actions/setup-java@v3
         with:
           java-version: '17'
-          distribution: 'corretto'
-          cache: 'maven'
+          distribution: 'corretto'  # Mueve distribution debajo de java-version
+          cache: 'maven'            # Asegúrate de que 'maven' esté entre comillas
 
       - name: Build with Maven
         run: mvn clean install
 
       - name: Run tests
         run: mvn test
+
