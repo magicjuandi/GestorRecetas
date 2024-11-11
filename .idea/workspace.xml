@@ -4,21 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2d0f86ac-ddf7-437e-a621-5197b526f128" name="Changes" comment="pruebas selenium">
-      <change afterPath="$PROJECT_DIR$/GestorRecetas/.github/workflows/ci.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GestorRecetas/src/main/java/co/edu/cue/GestorRecetas/mapping/dtos/IngredientWODto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GestorRecetas/src/main/java/co/edu/cue/GestorRecetas/mapping/mappers/IngredientWOMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GestorRecetas/src/test/java/co/edu/cue/GestorRecetas/controllers/EndPointTests.java" afterDir="false" />
+    <list default="true" id="2d0f86ac-ddf7-437e-a621-5197b526f128" name="Changes" comment="pruebas git actions">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GestorRecetas/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/GestorRecetas/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GestorRecetas/src/main/java/co/edu/cue/GestorRecetas/controllers/IngredientController.java" beforeDir="false" afterPath="$PROJECT_DIR$/GestorRecetas/src/main/java/co/edu/cue/GestorRecetas/controllers/IngredientController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GestorRecetas/src/main/java/co/edu/cue/GestorRecetas/controllers/MenuController.java" beforeDir="false" afterPath="$PROJECT_DIR$/GestorRecetas/src/main/java/co/edu/cue/GestorRecetas/controllers/MenuController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GestorRecetas/src/main/java/co/edu/cue/GestorRecetas/controllers/RecipeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/GestorRecetas/src/main/java/co/edu/cue/GestorRecetas/controllers/RecipeController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GestorRecetas/src/main/java/co/edu/cue/GestorRecetas/domain/entities/Ingredient.java" beforeDir="false" afterPath="$PROJECT_DIR$/GestorRecetas/src/main/java/co/edu/cue/GestorRecetas/domain/entities/Ingredient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GestorRecetas/src/main/java/co/edu/cue/GestorRecetas/domain/entities/Recipe.java" beforeDir="false" afterPath="$PROJECT_DIR$/GestorRecetas/src/main/java/co/edu/cue/GestorRecetas/domain/entities/Recipe.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GestorRecetas/src/main/java/co/edu/cue/GestorRecetas/services/IngredientService.java" beforeDir="false" afterPath="$PROJECT_DIR$/GestorRecetas/src/main/java/co/edu/cue/GestorRecetas/services/IngredientService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GestorRecetas/src/main/java/co/edu/cue/GestorRecetas/services/impl/IngredientServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/GestorRecetas/src/main/java/co/edu/cue/GestorRecetas/services/impl/IngredientServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GestorRecetas/src/test/java/co/edu/cue/GestorRecetas/services/IngredientServiceImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/GestorRecetas/src/test/java/co/edu/cue/GestorRecetas/services/IngredientServiceImplTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GestorRecetas/.github/workflows/test.yml" beforeDir="false" afterPath="$PROJECT_DIR$/GestorRecetas/.github/workflows/test.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -241,6 +229,7 @@
       <workItem from="1730935814538" duration="4894000" />
       <workItem from="1731014283074" duration="5620000" />
       <workItem from="1731067811625" duration="31000" />
+      <workItem from="1731285178184" duration="834000" />
     </task>
     <task id="LOCAL-00001" summary="si">
       <option name="closed" value="true" />
@@ -282,7 +271,23 @@
       <option name="project" value="LOCAL" />
       <updated>1730939703615</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="pruebas git actions">
+      <option name="closed" value="true" />
+      <created>1731285487443</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1731285487443</updated>
+    </task>
+    <task id="LOCAL-00007" summary="pruebas git actions">
+      <option name="closed" value="true" />
+      <created>1731285582092</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1731285582092</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -305,7 +310,8 @@
     <MESSAGE value="Merge remote-tracking branch 'origin/master'" />
     <MESSAGE value="documentación2" />
     <MESSAGE value="pruebas selenium" />
-    <option name="LAST_COMMIT_MESSAGE" value="pruebas selenium" />
+    <MESSAGE value="pruebas git actions" />
+    <option name="LAST_COMMIT_MESSAGE" value="pruebas git actions" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
