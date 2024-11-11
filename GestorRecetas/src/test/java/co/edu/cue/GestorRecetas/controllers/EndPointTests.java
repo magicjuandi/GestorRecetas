@@ -34,7 +34,7 @@ public class EndPointTests {
     private MenuService menuService;
 
     @MockBean
-    private RecipeService recipeService;
+    private RecipeService recipeService;//
 
     private final MenuDto menuDto = MenuDto.builder()
             .idMenu(1)
