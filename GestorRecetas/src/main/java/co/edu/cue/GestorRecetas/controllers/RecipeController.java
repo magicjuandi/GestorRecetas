@@ -9,13 +9,6 @@ import co.edu.cue.GestorRecetas.mapping.mappers.IngredientWOMapper;
 import co.edu.cue.GestorRecetas.mapping.mappers.RecipeMapper;
 import co.edu.cue.GestorRecetas.services.IngredientService;
 import co.edu.cue.GestorRecetas.services.RecipeService;
-import com.itextpdf.kernel.pdf.PdfDocument;
-
-import com.itextpdf.kernel.pdf.PdfWriter;
-import com.itextpdf.layout.Document;
-import com.itextpdf.layout.element.ListItem;
-import com.itextpdf.layout.element.Paragraph;
-import jakarta.servlet.http.HttpServletResponse;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -151,34 +144,34 @@ public class RecipeController {
         }
     }
 
-    // Método POST para exportar una receta a PDF
-    @PostMapping("/exportToPdf")
-    public void exportRecipeToPdf(@RequestParam int id, HttpServletResponse response) throws IOException {
-        RecipeDto recipeDto = recipeService.getById(id);
-        if (recipeDto == null) {
-            response.sendError(HttpServletResponse.SC_NOT_FOUND, "Recipe not found");
-            return;
-        }
-        response.setContentType("application/pdf");
-        response.setHeader("Content-Disposition", "attachment; filename=\"" + recipeDto.name() + ".pdf\"");
-
-        try (PdfWriter writer = new PdfWriter(response.getOutputStream())) {
-            PdfDocument pdfDocument = new PdfDocument(writer);
-            Document document = new Document(pdfDocument);
-            document.add(new Paragraph(recipeDto.name()).setFontSize(24).setBold().setMarginBottom(10));
-            document.add(new Paragraph(recipeDto.description()).setMarginBottom(5));
-            document.add(new Paragraph(recipeDto.minutes() + " mins").setMarginBottom(5));
-            document.add(new Paragraph("Ingredients").setBold().setMarginTop(10).setMarginBottom(5));
-            com.itextpdf.layout.element.List ingredientsList = new com.itextpdf.layout.element.List();
-            for (IngredientDto ingredientDto : IngredientMapper.mapFrom(recipeDto.ingredients())) {
-                ingredientsList.add(new ListItem(ingredientDto.name() + " - " + ingredientDto.quantity() + " - " + ingredientDto.unit()));
-            }
-            document.add(ingredientsList);
-            document.add(new Paragraph("Preparation").setBold().setMarginTop(10).setMarginBottom(5));
-            document.add(new Paragraph(recipeDto.preparation()).setMarginBottom(5));
-            document.close();
-        } catch (IOException e) {
-            response.sendError(HttpServletResponse.SC_INTERNAL_SERVER_ERROR, "Error generating PDF");
-        }
-    }
+//    // Método POST para exportar una receta a PDF
+//    @PostMapping("/exportToPdf")
+//    public void exportRecipeToPdf(@RequestParam int id, HttpServletResponse response) throws IOException {
+//        RecipeDto recipeDto = recipeService.getById(id);
+//        if (recipeDto == null) {
+//            response.sendError(HttpServletResponse.SC_NOT_FOUND, "Recipe not found");
+//            return;
+//        }
+//        response.setContentType("application/pdf");
+//        response.setHeader("Content-Disposition", "attachment; filename=\"" + recipeDto.name() + ".pdf\"");
+//
+//        try (PdfWriter writer = new PdfWriter(response.getOutputStream())) {
+//            PdfDocument pdfDocument = new PdfDocument(writer);
+//            Document document = new Document(pdfDocument);
+//            document.add(new Paragraph(recipeDto.name()).setFontSize(24).setBold().setMarginBottom(10));
+//            document.add(new Paragraph(recipeDto.description()).setMarginBottom(5));
+//            document.add(new Paragraph(recipeDto.minutes() + " mins").setMarginBottom(5));
+//            document.add(new Paragraph("Ingredients").setBold().setMarginTop(10).setMarginBottom(5));
+//            com.itextpdf.layout.element.List ingredientsList = new com.itextpdf.layout.element.List();
+//            for (IngredientDto ingredientDto : IngredientMapper.mapFrom(recipeDto.ingredients())) {
+//                ingredientsList.add(new ListItem(ingredientDto.name() + " - " + ingredientDto.quantity() + " - " + ingredientDto.unit()));
+//            }
+//            document.add(ingredientsList);
+//            document.add(new Paragraph("Preparation").setBold().setMarginTop(10).setMarginBottom(5));
+//            document.add(new Paragraph(recipeDto.preparation()).setMarginBottom(5));
+//            document.close();
+//        } catch (IOException e) {
+//            response.sendError(HttpServletResponse.SC_INTERNAL_SERVER_ERROR, "Error generating PDF");
+//        }
+//    }
 }

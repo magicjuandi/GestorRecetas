@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2d0f86ac-ddf7-437e-a621-5197b526f128" name="Changes" comment="prueba" />
+    <list default="true" id="2d0f86ac-ddf7-437e-a621-5197b526f128" name="Changes" comment="prueba">
+      <change beforePath="$PROJECT_DIR$/GestorRecetas/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/GestorRecetas/pom.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -121,7 +123,7 @@
       <command value="mvn test" />
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.EndPointTests">
+  <component name="RunManager" selected="Spring Boot.GestorRecetasApplication">
     <configuration name="EndPointTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="GestorRecetas" />
       <extension name="coverage">
@@ -247,7 +249,7 @@
       <workItem from="1730935814538" duration="4894000" />
       <workItem from="1731014283074" duration="5620000" />
       <workItem from="1731067811625" duration="31000" />
-      <workItem from="1731285178184" duration="4159000" />
+      <workItem from="1731285178184" duration="6607000" />
     </task>
     <task id="LOCAL-00001" summary="si">
       <option name="closed" value="true" />
@@ -337,7 +339,71 @@
       <option name="project" value="LOCAL" />
       <updated>1731290392410</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="prueba">
+      <option name="closed" value="true" />
+      <created>1731291011576</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1731291011576</updated>
+    </task>
+    <task id="LOCAL-00013" summary="prueba">
+      <option name="closed" value="true" />
+      <created>1731291379115</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1731291379115</updated>
+    </task>
+    <task id="LOCAL-00014" summary="prueba">
+      <option name="closed" value="true" />
+      <created>1731292107362</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1731292107362</updated>
+    </task>
+    <task id="LOCAL-00015" summary="prueba">
+      <option name="closed" value="true" />
+      <created>1731292246410</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1731292246410</updated>
+    </task>
+    <task id="LOCAL-00016" summary="prueba">
+      <option name="closed" value="true" />
+      <created>1731292333332</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1731292333332</updated>
+    </task>
+    <task id="LOCAL-00017" summary="prueba">
+      <option name="closed" value="true" />
+      <created>1731292524620</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1731292524620</updated>
+    </task>
+    <task id="LOCAL-00018" summary="prueba">
+      <option name="closed" value="true" />
+      <created>1731292705250</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1731292705250</updated>
+    </task>
+    <task id="LOCAL-00019" summary="prueba">
+      <option name="closed" value="true" />
+      <created>1731293074287</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1731293074287</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -361,6 +427,7 @@
     <MESSAGE value="documentación2" />
     <MESSAGE value="pruebas selenium" />
     <MESSAGE value="pruebas git actions" />
+    <MESSAGE value="Merge remote-tracking branch 'origin/masterBE' into masterBE" />
     <MESSAGE value="prueba" />
     <option name="LAST_COMMIT_MESSAGE" value="prueba" />
   </component>
